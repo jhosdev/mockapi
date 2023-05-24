@@ -1,0 +1,119 @@
+{
+  "roles": [
+    {
+      "id": "1",
+      "rol": "Administrador"
+    },
+    {
+      "id": "2",
+      "rol": "Cliente"
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$Rbc.5zy9ICkRlazPcFctLuGA.kcGKx.4KKQ45HwJf8I7kO9VSgQxG",
+      "fullName": "admin",
+      "lastName": "admin",
+      "roleId": 1,
+      "id": 1
+    },
+    {
+      "email": "cliente@gmail.com",
+      "password": "$2a$10$TjihSosdsVs9gDTXZCFnp.m2WbvsYKg4Q0Q8kMuHhis6bgKBY7pge",
+      "fullName": "cliente",
+      "lastName": "estandar",
+      "roleId": 2,
+      "id": 2
+    }
+  ],
+  "menus": [
+    {
+      "id": "1",
+      "parent": "0",
+      "name": "Panel",
+      "route": "dashboard",
+      "icon": "fa fa-gear-fill",
+      "order": "1"
+    },
+    {
+      "id": "2",
+      "parent": "0",
+      "name": "Usuarios",
+      "route": "users",
+      "icon": "fa fa-users",
+      "order": "2"
+    },
+    {
+      "id": "3",
+      "parent": "2",
+      "name": "Lista",
+      "route": "list",
+      "icon": "fa fa-caret-right",
+      "order": "1"
+    },
+    {
+      "id": "4",
+      "parent": "2",
+      "name": "Registrar",
+      "route": "list",
+      "icon": "fa fa-caret-right",
+      "order": "2"
+    },
+    {
+      "id": "5",
+      "parent": "0",
+      "name": "Pagos",
+      "route": "payments",
+      "icon": "fa fa-money",
+      "order": "1"
+    },
+    {
+      "id": "6",
+      "parent": "5",
+      "name": "Pagos Pendientes",
+      "route": "pending",
+      "icon": "fa fa-caret-right",
+      "order": "1"
+    }
+  ]
+  ,
+  "menuRoles": [
+    {
+      "id": "1",
+      "idMenu": "1",
+      "idRol": "1",
+      "active": "1"
+    },
+    {
+      "id": "2",
+      "idMenu": "2",
+      "idRol": "1",
+      "active": "1"
+    },
+    {
+      "id": "3",
+      "idMenu": "3",
+      "idRol": "1",
+      "active": "1"
+    },
+    {
+      "id": "4",
+      "idMenu": "4",
+      "idRol": "1",
+      "active": "1"
+    },
+    {
+      "id": "5",
+      "idMenu": "5",
+      "idRol": "2",
+      "active": "1"
+    },
+    {
+      "id": "6",
+      "idMenu": "6",
+      "idRol": "2",
+      "active": "1"
+    }
+  ]
+}
